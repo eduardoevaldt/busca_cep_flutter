@@ -13,7 +13,7 @@ class Application extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Flutter Busca Cep',
+      title: 'Flutter Web Service Cep',
       theme: ThemeData.dark(),
       home: const HomeScreen(),
     );

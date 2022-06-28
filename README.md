@@ -1,6 +1,6 @@
-# busca_cep
+# Flutter Web Service Cep
 
-A new Flutter project.
+Projeto da disciplina de DSM Ulbra Torres.
 
 ## Getting Started
 
