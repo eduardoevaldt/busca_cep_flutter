@@ -1,6 +1,6 @@
-import 'package:web_service/moderate/entities/locality/locality_entity.dart';
-import 'package:web_service/moderate/usecase/locality/find_locality_by_cep_output.dart';
-import '../../repositories/locality/locality_repository.dart';
+import '../entities/locality/locality_entity.dart';
+import '../repositories/locality/locality_repository.dart';
+import 'find_locality_by_cep_output.dart';
 
 class FindLocalityByCepUseCase {
   final ILocalityRepository localityRepository;

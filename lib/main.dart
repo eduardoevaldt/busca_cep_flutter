@@ -13,7 +13,7 @@ class Application extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Flutter Demo',
+      title: 'Flutter Busca Cep',
       theme: ThemeData.dark(),
       home: const HomeScreen(),
     );

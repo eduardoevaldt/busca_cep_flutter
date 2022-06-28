@@ -4,9 +4,9 @@ import 'package:flutter/material.dart';
 import 'package:share_plus/share_plus.dart';
 import 'package:web_service/formatter/text_input_formatter_cep.dart';
 import 'package:web_service/moderate/entities/locality/errors/invalid_cep.dart';
-import 'package:web_service/moderate/usecase/locality/find_locality_by_cep_output.dart';
-import 'package:web_service/moderate/usecase/locality/find_locality_by_cep_usecase.dart';
 
+import '../moderate/locality/find_locality_by_cep_output.dart';
+import '../moderate/locality/find_locality_by_cep_usecase.dart';
 import '../services/buscar_cep.dart';
 
 class HomeScreen extends StatefulWidget {
@@ -79,7 +79,7 @@ class _HomeScreenState extends State<HomeScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text("BUSCA CEP"),
+        title: const Text("WEB SERVICE CEP"),
         actions: [
           IconButton(
             onPressed: _sharedCep,
@@ -115,7 +115,7 @@ class _HomeScreenState extends State<HomeScreen> {
       textInputAction: TextInputAction.done,
       inputFormatters: [TextInputFormatterCep()],
       decoration: const InputDecoration(
-        labelText: "CEP",
+        labelText: "Informe o CEP",
         errorText: null,
         border: OutlineInputBorder(),
       ),
@@ -146,7 +146,7 @@ class _HomeScreenState extends State<HomeScreen> {
   Widget _buildResult() {
     if (locality == null) {
       return Column(
-        children: const [SizedBox(height: 10), Text("INFORME O CEP")],
+        children: const [SizedBox(height: 10)],
       );
     }
 

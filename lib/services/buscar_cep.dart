@@ -1,6 +1,5 @@
-import 'package:web_service/moderate/usecase/locality/find_locality_by_cep_usecase.dart';
-
 import '../../services/via_cep_service.dart';
+import '../moderate/locality/find_locality_by_cep_usecase.dart';
 
 abstract class BuscarCep {
   static FindLocalityByCepUseCase create() {
