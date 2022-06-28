@@ -2,10 +2,10 @@
 
 import 'package:flutter/material.dart';
 import 'package:share_plus/share_plus.dart';
+import 'package:web_service/formatter/text_input_formatter_cep.dart';
 import 'package:web_service/moderate/entities/locality/errors/invalid_cep.dart';
 import 'package:web_service/moderate/usecase/locality/find_locality_by_cep_output.dart';
 import 'package:web_service/moderate/usecase/locality/find_locality_by_cep_usecase.dart';
-import 'package:web_service/shared/text_input_formatter_cep.dart';
 
 import '../services/buscar_cep.dart';
 
